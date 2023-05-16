@@ -63,11 +63,11 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
-input:hover{
-border-color: var(--mitra-blue-500);
+input:hover {
+  border-color: var(--mitra-blue-500);
 }
 
-input:focus{
+input:focus {
   border: 2px solid var(--mitra-blue-500);
   box-shadow: 0px 0px 12px rgba(0, 103, 210, 0.2);
   outline: none;
@@ -115,7 +115,7 @@ button:last-of-type {
   margin: auto;
 }
 
-.secondary-button:hover{
+.secondary-button:hover {
   color: var(--mitra-blue-500);
   background-color: var(--mitra-blue-100);
   border-color: var(--mitra-blue-500);
@@ -233,3 +233,44 @@ a+a {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 } */
+
+#settings {
+  border-radius: 60px;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+  line-height: 0;
+  transition: .2s ease;
+}
+
+#settings:hover {
+  transform: scale(1.1);
+}
+
+#settings-panel {
+  display: none;
+  background-color: white;
+  height: 50vh;
+  width: 300px;
+  position: fixed;
+  right: 24px;
+  top: 84px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.settings-checkbox{
+  display: flex;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.settings-checkbox label{
+  font-size: 1rem;
+  margin-left: .4rem;
+}

@@ -45,25 +45,51 @@
                 me
               </label> -->
             </div>
-            <hr />
+            
 
-            <button class="secondary-button" type="submit"><img class="secondary-button-icons" src="img/google-logo.svg" height="20px" alt="Google Logo">Log in with Google</button>
-            <button class="secondary-button" type="submit"><img class="secondary-button-icons" src="img/microsoft-logo.svg" height="20px" alt="Google Logo">Log in with Microsoft</button>
-            <button class="secondary-button" type="submit"><img class="secondary-button-icons" src="img/sso.svg" height="20px" alt="SSO Icon">Log in with SSO</button>
-            <hr />
+            <div class="social-buttons">
+              <hr />
+              <button class="secondary-button" type="submit">
+                <img
+                  class="secondary-button-icons"
+                  src="img/google-logo.svg"
+                  height="20px"
+                  alt="Google Logo"
+                />Log in with Google
+              </button>
+              <button class="secondary-button" type="submit">
+                <img
+                  class="secondary-button-icons"
+                  src="img/microsoft-logo.svg"
+                  height="20px"
+                  alt="Google Logo"
+                />Log in with Microsoft
+              </button>
+              <button class="secondary-button" type="submit">
+                <img
+                  class="secondary-button-icons"
+                  src="img/sso.svg"
+                  height="20px"
+                  alt="SSO Icon"
+                />Log in with SSO
+              </button>
+              
+            </div>
 
-            <div class="container">
-              <a href="#">Change Username or Email</a>
-              <a href="#">Forgot Username or Password?</a>
+            <div class="links-container">
+              <hr />
+              <a class="username-email" href="#">Change Username or Email</a>
+              <a class="forgot-password" href="#">Forgot Username or Password?</a>
             </div>
           </form>
         </div>
         <footer>
-          <a href="https://mitratech.com/" target="_blank"><img
-            class="logo"
-            src="img/mitratech-badge.svg"
-            height="36px "
-            alt="A Mitratech Product"
+          <a href="https://mitratech.com/" target="_blank"
+            ><img
+              class="logo"
+              src="img/mitratech-badge.svg"
+              height="36px "
+              alt="A Mitratech Product"
           /></a>
           <div class="footer-links">
             <a href="#">Need Help?</a>
@@ -76,5 +102,54 @@
         </footer>
       </div>
     </div>
+    <div id="settings" onclick="toggleItems('#settings-panel')">
+      <img src="img/settings.svg" height="20px" alt="settings" />
+    </div>
+    <div id="settings-panel">
+      <h3>Settings panel</h3>
+      <hr />
+      <div class="settings-checkbox">
+        <input
+          type="checkbox"
+          name="social-buttons"
+          id="social-buttons"
+          value="Social"
+          checked
+        />
+        <label for="social-buttons">Social Buttons</label>
+      </div>
+      <div class="settings-checkbox">
+        <input
+          type="checkbox"
+          name="links-container"
+          id="links-container"
+          value="password"
+          checked
+        />
+        <label for="links-container">Links Container</label>
+      </div>
+      <div class="settings-checkbox">
+        <input
+          type="checkbox"
+          name="username-email"
+          id="username-email"
+          value="username"
+          checked
+        />
+        <label for="username-email">Username/Email link</label>
+      </div>
+      <div class="settings-checkbox">
+        <input
+          type="checkbox"
+          name="forgot-password"
+          id="forgot-password"
+          value="password"
+          checked
+        />
+        <label for="forgot-password">Forgot Username/Password link</label>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
