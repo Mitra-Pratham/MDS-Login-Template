@@ -18,7 +18,7 @@
     <div class="parent-container">
       <div class="card-container">
         <div class="card">
-          <img class="logo" src="img/logo.svg" alt="" />
+          <img class="logo" src="img/logo.svg" alt="tracker I-9 Logo" />
           <h3 class="welcome-text">Welcome to I-9 Complete</h3>
 
           <form action="#" method="post">
@@ -39,12 +39,17 @@
                 required
               />
 
-              <button type="submit">Log In</button>
+              <button class="primary-button" type="submit">Log In</button>
               <!-- <label>
                 <input type="checkbox" checked="checked" name="remember" /> Remember
                 me
               </label> -->
             </div>
+            <hr />
+
+            <button class="secondary-button" type="submit"><img class="secondary-button-icons" src="img/google-logo.svg" height="20px" alt="Google Logo">Log in with Google</button>
+            <button class="secondary-button" type="submit"><img class="secondary-button-icons" src="img/microsoft-logo.svg" height="20px" alt="Google Logo">Log in with Microsoft</button>
+            <button class="secondary-button" type="submit"><img class="secondary-button-icons" src="img/sso.svg" height="20px" alt="SSO Icon">Log in with SSO</button>
             <hr />
 
             <div class="container">
@@ -54,12 +59,12 @@
           </form>
         </div>
         <footer>
-          <img
+          <a href="https://mitratech.com/" target="_blank"><img
             class="logo"
             src="img/mitratech-badge.svg"
-            height="48px "
-            alt="mitratech-badge"
-          />
+            height="36px "
+            alt="A Mitratech Product"
+          /></a>
           <div class="footer-links">
             <a href="#">Need Help?</a>
             <a href="#">Terms & Conditions</a>

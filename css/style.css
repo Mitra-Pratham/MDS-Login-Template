@@ -24,27 +24,21 @@
   --mitra-blue-100: #f2f7fd;
   --mitra-blue-500: #0067d2;
   --card-color: #fff;
+  --cool-gray-100: #F9FAFC;
 }
+
 html,
 body {
   font-family: "Source Sans Pro", sans-serif;
   height: 100%;
 }
+
 p {
   font-size: 16px;
 }
+
 body {
   background: url(../img/bg.svg);
-}
-.bg-logo{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 100%;
-  background: url(../img/bg-logo.svg) no-repeat fixed center;
-  z-index: -1;
 }
 
 label {
@@ -70,22 +64,51 @@ input[type="password"] {
 }
 
 button {
-  background-color: var(--mitra-blue-500);
-  border-radius: 4px;
-  color: white;
   font-family: inherit;
+  border-radius: 4px;
+  padding: 10px 28px;
+  margin-bottom: 1rem;
   font-weight: 700;
   font-size: 1rem;
-  padding: 10px 28px;
-  margin-bottom: 1.5rem;
-  border: none;
   cursor: pointer;
   width: 100%;
   transition: 0.2s ease;
+
 }
 
-button:hover {
+button:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.primary-button {
+  background-color: var(--mitra-blue-500);
+  color: white;
+  border: none;
+}
+
+.primary-button:hover {
   background-color: var(--mitra-blue-600);
+}
+
+.secondary-button {
+  background-color: white;
+  color: var(--cool-gray-900);
+  border: 1px solid var(--cool-gray-400);
+  position: relative;
+}
+
+.secondary-button-icons {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.secondary-button:hover{
+  color: var(--mitra-blue-500);
+  background-color: var(--mitra-blue-100);
+  border-color: var(--mitra-blue-500);
 }
 
 hr {
@@ -108,14 +131,25 @@ a:hover {
   color: var(--mitra-blue-600);
 }
 
-a + a {
+a+a {
   margin-bottom: 0;
+}
+
+.bg-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  background: url(../img/bg-logo.svg) no-repeat fixed center;
+  z-index: -1;
 }
 
 .logo {
   display: block;
   text-align: center;
-  margin: auto auto 1.5rem;
+  margin: 1.5rem auto 2rem auto;
 }
 
 .welcome-text {
@@ -142,10 +176,20 @@ a + a {
 
 .card {
   padding: 2rem;
-  margin:auto auto 2.25rem;
+  margin: auto auto 2.25rem;
   border-radius: 4px;
   width: 20vw;
   background-color: var(--card-color);
+}
+
+@media screen and (max-width: 1400px) {
+  .card {
+    padding: 2rem;
+    margin: auto auto 2.25rem;
+    border-radius: 4px;
+    width: 25vw;
+    background-color: var(--card-color);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -154,9 +198,6 @@ a + a {
     border-radius: 6px;
     width: 80vw;
     background-color: var(--card-color);
-  }
-  .parent-container {
-    align-items: start;
   }
 }
 
@@ -168,7 +209,7 @@ a + a {
 .footer-links a {
   color: white;
   font-weight: 400;
-  padding: 0 1rem 0 0;
+  padding: 0 1rem 0 1rem;
 }
 
 .copyright {
