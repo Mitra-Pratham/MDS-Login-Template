@@ -25,6 +25,7 @@
             <div class="container">
               <label class="required" for="uname">Username or Email</label>
               <input
+              id="uname"
                 type="text"
                 placeholder="Enter Username"
                 name="uname"
@@ -33,6 +34,7 @@
 
               <label class="required" for="psw">Password</label>
               <input
+              id="psw"
                 type="password"
                 placeholder="Enter Password"
                 name="psw"
@@ -102,8 +104,8 @@
         </footer>
       </div>
     </div>
-    <div id="settings" onclick="toggleItems('#settings-panel')">
-      <img src="img/settings.svg" height="20px" alt="settings" />
+    <div id="settings">
+      <a href="#" onclick="toggleItems('#settings-panel')"><img src="img/settings.svg" height="20px" alt="settings" /></a>
     </div>
     <div id="settings-panel">
       <h3>Settings panel</h3>
