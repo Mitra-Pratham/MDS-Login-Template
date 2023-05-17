@@ -61,13 +61,15 @@ input[type="password"] {
   border: 1px solid var(--cool-gray-400);
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: var(--mitra-blue-100);
 }
 
 input:hover {
   border-color: var(--mitra-blue-500);
 }
 
-input:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
   border: 2px solid var(--mitra-blue-500);
   box-shadow: 0px 0px 12px rgba(0, 103, 210, 0.2);
   outline: none;
