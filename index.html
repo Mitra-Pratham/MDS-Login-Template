@@ -19,71 +19,76 @@
       <div class="card-container">
         <div class="card">
           <img class="logo" src="img/logo.svg" alt="tracker I-9 Logo" />
+          <div class="error-message">
+            The username or password provided was incorrect.
+          </div>
           <h3 class="welcome-text">Welcome to I-9 Complete</h3>
 
-          <form action="#" method="post">
-            <div class="container">
-              <label class="required" for="uname">Username or Email</label>
-              <input
-              id="uname"
-                type="text"
-                placeholder="Enter Username"
-                name="uname"
-                required
-              />
-
-              <label class="required" for="psw">Password</label>
-              <input
-              id="psw"
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                required
-              />
-
-              <button class="primary-button" type="submit">Log In</button>
-              <!-- <label>
-                <input type="checkbox" checked="checked" name="remember" /> Remember
-                me
-              </label> -->
-            </div>
-            
-
-            <div class="social-buttons">
-              <hr />
-              <button class="secondary-button" type="submit">
-                <img
-                  class="secondary-button-icons"
-                  src="img/google-logo.svg"
-                  height="20px"
-                  alt="Google Logo"
-                />Log in with Google
-              </button>
-              <button class="secondary-button" type="submit">
-                <img
-                  class="secondary-button-icons"
-                  src="img/microsoft-logo.svg"
-                  height="20px"
-                  alt="Google Logo"
-                />Log in with Microsoft
-              </button>
-              <button class="secondary-button" type="submit">
-                <img
-                  class="secondary-button-icons"
-                  src="img/sso.svg"
-                  height="20px"
-                  alt="SSO Icon"
-                />Log in with SSO
-              </button>
+          <div id="login-form">
+            <!-- <form action="#"> -->
+              <div class="container">
+                <label class="required" for="uname">Username or Email</label>
+                <input
+                id="uname"
+                  type="text"
+                  placeholder="Enter Username"
+                  name="uname"
+                  required
+                />
+  
+                <label class="required" for="psw">Password</label>
+                <input
+                id="psw"
+                  type="password"
+                  placeholder="Enter Password"
+                  name="psw"
+                  required
+                />
+  
+                <button class="primary-button" type="submit" onclick="openErrorMessage()">Log In</button>
+                <!-- <label>
+                  <input type="checkbox" checked="checked" name="remember" /> Remember
+                  me
+                </label> -->
+              </div>
               
-            </div>
-
-            <div class="links-container">
-              <hr />
-              <a class="username-email" href="#">Change Username or Email</a>
-              <a class="forgot-password" href="#">Forgot Username or Password?</a>
-            </div>
-          </form>
+  
+              <div class="social-buttons">
+                <hr />
+                <button class="secondary-button" type="submit">
+                  <img
+                    class="secondary-button-icons"
+                    src="img/google-logo.svg"
+                    height="20px"
+                    alt="Google Logo"
+                  />Log in with Google
+                </button>
+                <button class="secondary-button" type="submit">
+                  <img
+                    class="secondary-button-icons"
+                    src="img/microsoft-logo.svg"
+                    height="20px"
+                    alt="Google Logo"
+                  />Log in with Microsoft
+                </button>
+                <button class="secondary-button" type="submit">
+                  <img
+                    class="secondary-button-icons"
+                    src="img/sso.svg"
+                    height="20px"
+                    alt="SSO Icon"
+                  />Log in with SSO
+                </button>
+                
+              </div>
+  
+              <div class="links-container">
+                <hr />
+                <a class="username-email" href="#">Change Username or Email</a>
+                <a class="forgot-password" href="#">Forgot Username or Password?</a>
+              </div>
+            <!-- </form> -->
+          </div>
         </div>
         <footer>
           <a href="https://mitratech.com/" target="_blank"

@@ -5,3 +5,14 @@ $('input:checkbox').on('click', function(e){
 function toggleItems(val){
     $(val).toggle();
 }
+
+function openErrorMessage(){
+    toggleItems('.error-message');
+
+    $('input').css('border-color','red');
+
+    setTimeout(() => {
+        toggleItems('.error-message');
+    }, 8000);
+}
+

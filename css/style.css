@@ -298,3 +298,14 @@ a+a {
   font-size: 1rem;
   margin-left: .4rem;
 }
+
+.error-message{
+  display: none;
+  padding: 0.8rem 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  font-size: .8rem;
+  color: white;
+  font-weight: bold;
+  background-color: var(--red-500);
+  border-radius: 4px;
+}
