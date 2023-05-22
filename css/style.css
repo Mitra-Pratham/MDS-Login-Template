@@ -309,3 +309,12 @@ a+a {
   background-color: var(--red-500);
   border-radius: 4px;
 }
+
+/* only for iphone */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-device-width:1024px) { 
+  select,
+  textarea,
+  input {
+    font-size: 1rem;
+  }
+}
