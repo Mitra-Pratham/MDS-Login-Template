@@ -37,13 +37,16 @@
                 />
   
                 <label class="required" for="psw">Password</label>
-                <input
+                <div class="password-container">
+                  <input
                 id="psw"
                   type="password"
                   placeholder="Enter Password"
                   name="psw"
                   required
                 />
+                  <img class="password-icon" src="img/password-show.svg" alt="show password icon">
+                </div>
   
                 <button class="primary-button" type="submit" onclick="openErrorMessage()">Log In</button>
                 <!-- <label>
