@@ -29,7 +29,7 @@
 
 html,
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100%;
   font-size: 16px;
 }
@@ -50,7 +50,7 @@ label {
 }
 
 input{
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 input[type="text"],
