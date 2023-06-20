@@ -172,6 +172,18 @@ a+a {
   margin: 1.5rem auto 2rem auto;
 }
 
+@media screen and (max-width: 1280px) {
+  .logo {
+    height: 1.75em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    height: 1.4em;
+  }
+}
+
 .welcome-text {
   text-align: center;
   font-size: 1.125rem;
