@@ -1,5 +1,11 @@
 $('input:checkbox').on('click', function(e){
     toggleItems(`.${e.target.id}`);
+    if($('.settings-checkbox input:checked').length > 2){
+        $('.parent-container').css('margin-top','6rem');
+    }
+    else{
+        $('.parent-container').css('margin-top','0');
+    }
 })
 
 $('.password-icon').on('click', function(){

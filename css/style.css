@@ -30,12 +30,13 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  height: 100%;
   font-size: 16px;
 }
 
 body {
+  height: 100vh;
   background: url(../img/bg.svg) no-repeat fixed center;
+  margin: 0;
 }
 
 label {
@@ -170,6 +171,13 @@ a+a {
   display: block;
   text-align: center;
   margin: 1.5rem auto 2rem auto;
+  height: 3em;
+}
+
+@media screen and (max-width: 1500px) {
+  .logo {
+    height: 2.5em;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -197,7 +205,7 @@ a+a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 @media screen and (max-width: 1400px) {
