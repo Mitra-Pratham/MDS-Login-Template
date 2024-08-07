@@ -26,136 +26,127 @@
 
           <div id="login-form">
             <!-- <form action="#"> -->
-              <div class="container">
-                <label class="required" for="uname">Username or Email</label>
-                <input
+            <div class="container">
+              <label class="required" for="uname">Username or Email</label>
+              <input
                 id="uname"
-                  type="text"
-                  placeholder="Enter Username"
-                  name="uname"
-                  required
-                />
-  
-                <label class="required" for="psw">Password</label>
-                <div class="password-container">
-                  <input
-                id="psw"
+                type="text"
+                placeholder="Enter Username"
+                name="uname"
+                required
+              />
+
+              <label class="required" for="psw">Password</label>
+              <div class="password-container">
+                <input
+                  id="psw"
                   type="password"
                   placeholder="Enter Password"
                   name="psw"
                   required
                 />
-                  <a class="password-icon" href="#"><img src="img/password-show.svg" alt="show password icon"></a>
-                </div>
-  
-                <button class="primary-button" type="submit" onclick="openErrorMessage()">Log In</button>
-                <!-- <label>
+                <a class="password-icon" href="#"
+                  ><img src="img/password-show.svg" alt="show password icon"
+                /></a>
+              </div>
+
+              <button
+                class="primary-button"
+                type="submit"
+                onclick="openErrorMessage()"
+              >
+                Log In
+              </button>
+              <!-- <label>
                   <input type="checkbox" checked="checked" name="remember" /> Remember
                   me
                 </label> -->
-              </div>
-              
-  
-              <div class="social-buttons" style="display: none;">
-                <hr />
-                <button class="secondary-button" type="submit">
-                  <img
-                    class="secondary-button-icons"
-                    src="img/google-logo.svg"
-                    height="20px"
-                    alt="Google Logo"
-                  />Log in with Google
-                </button>
-                <button class="secondary-button" type="submit">
-                  <img
-                    class="secondary-button-icons"
-                    src="img/microsoft-logo.svg"
-                    height="20px"
-                    alt="Google Logo"
-                  />Log in with Microsoft
-                </button>
-                <button class="secondary-button" type="submit">
-                  <img
-                    class="secondary-button-icons"
-                    src="img/sso.svg"
-                    height="20px"
-                    alt="SSO Icon"
-                  />Log in with SSO
-                </button>
-                
-              </div>
-  
-              <div class="links-container" style="display: none;">
-                <hr />
-                <a class="username-email" href="#">Change Username or Email</a>
-                <a class="forgot-password" href="#">Forgot Username or Password?</a>
-              </div>
+            </div>
+
+            <div class="social-buttons" style="display: none">
+              <hr />
+              <button class="secondary-button" type="submit">
+                <img
+                  class="secondary-button-icons"
+                  src="img/google-logo.svg"
+                  height="20px"
+                  alt="Google Logo"
+                />Log in with Google
+              </button>
+              <button class="secondary-button" type="submit">
+                <img
+                  class="secondary-button-icons"
+                  src="img/microsoft-logo.svg"
+                  height="20px"
+                  alt="Google Logo"
+                />Log in with Microsoft
+              </button>
+              <button class="secondary-button" type="submit">
+                <img
+                  class="secondary-button-icons"
+                  src="img/sso.svg"
+                  height="20px"
+                  alt="SSO Icon"
+                />Log in with SSO
+              </button>
+            </div>
+
+            <div class="links-container" style="display: none">
+              <hr />
+              <a class="username-email" href="#">Change Username or Email</a>
+              <a class="forgot-password" href="#"
+                >Forgot Username or Password?</a
+              >
+            </div>
             <!-- </form> -->
           </div>
         </div>
         <footer>
-          <a href="https://mitratech.com/" target="_blank"
+          <!-- <a href="https://mitratech.com/" target="_blank"
             ><img
-              class="logo"
+              class="badge"
               src="img/mitratech-badge.svg"
               height="36px "
               alt="A Mitratech Product"
-          /></a>
-          <div class="footer-links" style="display: none;">
+          /></a> -->
+          <div class="footer-links" style="display: none">
             <a href="#">Need Help?</a>
             <a href="#">Terms & Conditions</a>
             <a href="#">Privacy Policy</a>
           </div>
           <div class="copyright">
-            <span class="version-number"><b>Version 7.X.0</b> |</span> Copyright © 1999-2022 Mitratech Holdings, Inc. All Rights Reserved.
+            <span class="version-number"><b>Version 7.X.0</b> |</span> Copyright
+            © 1999-2022 Mitratech Holdings, Inc. All Rights Reserved.
           </div>
         </footer>
       </div>
     </div>
     <div id="settings">
-      <a href="#" onclick="toggleItems('#settings-panel')"><img src="img/settings.svg" height="20px" alt="settings" /></a>
+      <a href="#" onclick="toggleItems('#settings-panel')"
+        ><img src="img/settings.svg" height="20px" alt="settings"
+      /></a>
     </div>
     <div id="settings-panel">
       <h3>Settings panel</h3>
       <hr />
       <div class="settings-checkbox">
-        <input
-          type="checkbox"
-          name="social-buttons"
-          id="social-buttons"
-        />
+        <input type="checkbox" name="social-buttons" id="social-buttons" />
         <label for="social-buttons">Social Buttons</label>
       </div>
       <div class="settings-checkbox">
-        <input
-          type="checkbox"
-          name="links-container"
-          id="links-container"
-        />
+        <input type="checkbox" name="links-container" id="links-container" />
         <label for="links-container">Links Container</label>
       </div>
       <div class="settings-checkbox">
-        <input
-          type="checkbox"
-          name="username-email"
-          id="username-email"
-        />
+        <input type="checkbox" name="username-email" id="username-email" />
         <label for="username-email">Username/Email link</label>
       </div>
       <div class="settings-checkbox">
-        <input
-          type="checkbox"
-          name="forgot-password"
-          id="forgot-password"
-        />
+        <input type="checkbox" name="forgot-password" id="forgot-password" />
         <label for="forgot-password">Forgot Username/Password link</label>
       </div>
       <div class="settings-checkbox">
-        <input
-          type="checkbox"
-          name="footer-links"
-          id="footer-links"
-        />
+        <input type="checkbox" name="footer-links" id="footer-links" />
         <label for="footer-links">Footer Links</label>
       </div>
       <div class="settings-checkbox">

@@ -166,28 +166,47 @@ a + a {
   z-index: -1;
 } */
 
-.logo {
+.logo,
+.badge {
   display: block;
   text-align: center;
   margin: 1.5rem auto 2rem auto;
-  height: 4.5em;
 }
 
+.badge {
+  height: 3em;
+}
+
+.logo {
+  height: 4.5em;
+}
 @media screen and (max-width: 1500px) {
+  .badge {
+    height: 2.25em;
+  }
+
   .logo {
     height: 4.25em;
   }
 }
 
 @media screen and (max-width: 1280px) {
+  .badge {
+    height: 1.75em;
+  }
+
   .logo {
     height: 4em;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .logo {
+  .badge {
     height: 1.4em;
+  }
+
+  .logo {
+    height: 3.5em;
   }
 }
 
